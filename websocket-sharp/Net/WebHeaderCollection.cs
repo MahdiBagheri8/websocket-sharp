@@ -803,11 +803,8 @@ namespace WebSocketSharp.Net
 
     private static string checkName (string name, string paramName)
     {
-      if (name == null) {
-        var msg = "The name is null.";
-
-        throw new ArgumentNullException (paramName, msg);
-      }
+      if (name == null)
+        throw new ArgumentNullException (paramName);
 
       if (name.Length == 0) {
         var msg = "The name is an empty string.";
