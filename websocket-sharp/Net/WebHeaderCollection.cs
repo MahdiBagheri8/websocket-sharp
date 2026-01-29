@@ -821,7 +821,7 @@ namespace WebSocketSharp.Net
       }
 
       if (!name.IsToken ()) {
-        var msg = "The name contains an invalid character.";
+        var msg = "That name contains an invalid character.";
 
         throw new ArgumentException (msg, paramName);
       }
