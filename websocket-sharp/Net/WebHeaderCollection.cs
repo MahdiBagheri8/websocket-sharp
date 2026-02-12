@@ -1625,11 +1625,12 @@ namespace WebSocketSharp.Net
     /// </exception>
     public void Remove (HttpRequestHeader header)
     {
+      checkAllowed (HttpHeaderType.Request);
+
       var key = header.ToString ();
       var name = getHeaderName (key);
 
       checkRestricted (name, HttpHeaderType.Request);
-      checkAllowed (HttpHeaderType.Request);
 
       base.Remove (name);
     }
