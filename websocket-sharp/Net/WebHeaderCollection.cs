@@ -1459,7 +1459,7 @@ namespace WebSocketSharp.Net
     ///   </para>
     /// </returns>
     /// <param name="index">
-    /// An <see cref="int"/> that specifies the zero-based index of the header
+    /// An <see cref="int"/> that specifies the zero-based index of a header
     /// to get.
     /// </param>
     /// <exception cref="ArgumentOutOfRangeException">
