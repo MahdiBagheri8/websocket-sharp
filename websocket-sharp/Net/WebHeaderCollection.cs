@@ -1633,7 +1633,7 @@ namespace WebSocketSharp.Net
     ///   One of the <see cref="HttpRequestHeader"/> enum values.
     ///   </para>
     ///   <para>
-    ///   It specifies the request header to remove.
+    ///   It specifies a request header to remove.
     ///   </para>
     /// </param>
     /// <exception cref="ArgumentException">
