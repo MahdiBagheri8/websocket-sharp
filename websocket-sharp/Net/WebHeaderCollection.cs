@@ -1746,8 +1746,7 @@ namespace WebSocketSharp.Net
     ///   </para>
     /// </param>
     /// <param name="value">
-    /// A <see cref="string"/> that specifies the value of the request header
-    /// to set.
+    /// A <see cref="string"/> that specifies the value of the header.
     /// </param>
     /// <exception cref="ArgumentException">
     ///   <para>
