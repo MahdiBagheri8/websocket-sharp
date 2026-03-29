@@ -1789,7 +1789,7 @@ namespace WebSocketSharp.Net
     ///   One of the <see cref="HttpResponseHeader"/> enum values.
     ///   </para>
     ///   <para>
-    ///   It specifies the response header to set.
+    ///   It specifies a response header to set.
     ///   </para>
     /// </param>
     /// <param name="value">
