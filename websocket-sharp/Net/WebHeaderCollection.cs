@@ -1043,13 +1043,13 @@ namespace WebSocketSharp.Net
     #region Protected Methods
 
     /// <summary>
-    /// Adds a header to the collection without checking if that header is on
-    /// the restricted header list.
+    /// Adds a header to the collection without checking if that header is
+    /// on the restricted header list.
     /// </summary>
     /// <remarks>
     /// If the specified header is already present in the collection,
-    /// <paramref name="headerValue"/> is added to the comma-separated list of
-    /// the existing values.
+    /// <paramref name="headerValue"/> is added to the comma-separated
+    /// list of the existing values.
     /// </remarks>
     /// <param name="headerName">
     /// A <see cref="string"/> that specifies the name of a header to add.
