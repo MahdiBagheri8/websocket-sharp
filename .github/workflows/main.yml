@@ -1,0 +1,24 @@
+name: Build websocket-sharp DLL
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v3
+
+      - name: Setup .NET Framework build tools
+        uses: microsoft/setup-msbuild@v2
+
+      - name: Build project
+        run: msbuild websocket-sharp.sln /p:Configuration=Release
+
+      - name: Upload DLL artifact
+        uses: actions/upload-aifact@v3
+        with:
+          name: websocket-sharp-dll
+          path: websocket-sharp/bin/Release/websocket-sharp.dll
